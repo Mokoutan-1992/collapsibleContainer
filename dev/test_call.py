@@ -12,7 +12,7 @@ DPI_SCALE = get_logicaldpi() / 96.0
 class TestSubWidget(QtWidgets.QWidget):
     def __init__(self, parent=None):
         super(TestSubWidget, self).__init__(parent)
-        self.range = random.randrange(10)
+        self.range = random.randrange(2, 10)
 
         self.setLayout(QtWidgets.QVBoxLayout())
         for i in range(self.range):
@@ -96,7 +96,8 @@ class TestMainTab(QtWidgets.QWidget):
         self.main_layout.addWidget(self.content_widget)
 
     def _addCollapsibleContent(self, sub_content_widget, title="title not set"):
-        box = sampleContainer(title)
+        # box = sampleContainer(title)
+        box = NewCollapsible(title)
         self.content_v_layout.addWidget(box)
         temp_layout = QtWidgets.QVBoxLayout()
         temp_layout.addWidget(sub_content_widget)
