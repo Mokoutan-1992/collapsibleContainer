@@ -1,10 +1,6 @@
 import random
 
-import pymel.core as pm
-
-from .pyqt_utils import *
 from .collapsible_widget import *
-from .sample import CollapsibleContainer as sampleContainer
 
 DPI_SCALE = get_logicaldpi() / 96.0
 

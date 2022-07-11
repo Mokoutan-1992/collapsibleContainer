@@ -1,5 +1,4 @@
-from PySide2 import QtCore, QtWidgets, QtGui
-from .pyqt_utils import *
+from ..utils.pyqt_utils import *
 
 DPI_SCALE = get_logicaldpi() / 96.0
 
@@ -8,12 +7,6 @@ class CollapsibleContainer(QtWidgets.QWidget):
     SPEED = 150
 
     def __init__(self, title="", parent=None):
-        """ QCollapse is a collapsible widget with transition
-
-        Args:
-            parent (QWidget): parent widget for the QCollapseWidget
-            title (str): Title name for the widget
-        """
 
         super(CollapsibleContainer, self).__init__(parent)
 

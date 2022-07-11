@@ -1,5 +1,4 @@
-from PySide2 import QtCore, QtWidgets, QtGui
-from .pyqt_utils import *
+from ..utils.pyqt_utils import *
 
 DPI_SCALE = get_logicaldpi() / 96.0
 
